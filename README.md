@@ -13,20 +13,28 @@
 - iOS 11.0
 - Xcode 9.0
 
+
 ## Preview
 
-1. Length (youtube : [https://youtu.be/2wKLUqPizfQ](https://youtu.be/2wKLUqPizfQ))
+1. Mesure Length 
+
+youtube : [https://youtu.be/2wKLUqPizfQ](https://youtu.be/2wKLUqPizfQ)
+
 ![](demo_length.png) 
 
-1. Area (youtube : [https://youtu.be/gRd1Ag4C7lU](https://youtu.be/gRd1Ag4C7lU))
+
+2. Mesure Area 
+
+youtube : [https://youtu.be/gRd1Ag4C7lU](https://youtu.be/gRd1Ag4C7lU)
+
 ![](dmoe_area.png)
+
 
 ## Install
 
 - AppStore (recommend)
 
   > [**ARuler** https://itunes.apple.com/us/app/id1287068680](https://itunes.apple.com/us/app/id1287068680)
-
 
 
 - Manually compile
@@ -39,7 +47,6 @@
 
 * 1.1.0 New UI design
 
-  
 
 ## Contribute
 
