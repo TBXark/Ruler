@@ -1,0 +1,28 @@
+/* 
+  RulerString.strings
+  Ruler
+
+  Created by Tbxark on 19/09/2017.
+  Copyright © 2017 Tbxark. All rights reserved.
+*/
+
+
+"ARNotAvailable" = "AR not available";
+"ARInitializing" = "AR is initializing";
+"ARInsufficientFeatures" = "AR insufficient features";
+"ARExcessiveMotion" = "AR excessive motion";
+"ARInitializingMessage" = "Please shake the device to get more feature points";
+"ARInsufficientFeaturesMessage" = "The feature point is not sufficient, please sway the equipment to obtain more feature points";
+"ARExcessiveMotionMessage" = "Device moves too fast";
+
+
+"SaveSuccess" = "Save success";
+"SaveFail" = "Save fail";
+"SaveNeedPermission" = "Please open the album permissions in the Settings";
+
+"DidCopy" = "Copy to the clipboard";
+
+"Setting" = "Setting";
+
+"StartArea" = "Area measurement";
+"StartLength" = "Length measurement";

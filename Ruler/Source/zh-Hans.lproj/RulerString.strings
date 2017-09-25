@@ -1,0 +1,28 @@
+/* 
+  RulerString.strings
+  Ruler
+
+  Created by Tbxark on 19/09/2017.
+  Copyright © 2017 Tbxark. All rights reserved.
+*/
+
+
+"ARNotAvailable" = "AR不可用";
+"ARInitializing" = "AR功能正在初始化";
+"ARInsufficientFeatures" = "AR功能受限";
+"ARExcessiveMotion" = "AR功能受限";
+"ARInitializingMessage" = "请左右晃动设备以获取更多特征点";
+"ARInsufficientFeaturesMessage" = "特征点不足, 请左右晃动设备以获取更多特征点";
+"ARExcessiveMotionMessage" = "设备移动过快";
+
+
+"SaveSuccess" = "保存成功";
+"SaveFail" = "保存失败";
+"SaveNeedPermission" = "请在设置界面打开相册权限";
+
+"DidCopy" = "已复制到剪贴版";
+
+"Setting" = "设置";
+
+"StartArea" = "开始测量面积";
+"StartLength" = "开始测量长度";
