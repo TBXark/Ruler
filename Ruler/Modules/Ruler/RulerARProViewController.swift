@@ -426,7 +426,6 @@ class RulerARProViewController: UIViewController {
         showMenuAction(sender)
         lineSet = nil
         line = nil
-        resultLabel.attributedText = mode.toAttrStr()
         switch mode {
         case .area:
             changeFinishState(state: false)
@@ -441,6 +440,7 @@ class RulerARProViewController: UIViewController {
             placeButton.disabledImage = Image.Place.area
             mode = .area
         }
+        resultLabel.attributedText = mode.toAttrStr()
     }
     
     
