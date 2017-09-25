@@ -39,11 +39,15 @@
 
 * 1.1.0 New UI design
 
-  ​
+  
 
 ## Contribute
 
 We would love for you to contribute to **Ruler**, check the ``LICENSE`` file for more info.
+
+## Thanks
+[ARuler](https://github.com/duzexu/ARuler) Mesure distance using apple ARKit
+
 
 ## Meta
 
