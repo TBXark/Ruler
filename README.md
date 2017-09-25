@@ -13,6 +13,14 @@
 - iOS 11.0
 - Xcode 9.0
 
+## Preview
+
+1. length
+![](demo_length.png) 
+
+2. area
+![](dmoe_area.png)
+
 ## Install
 
 - AppStore (recommend)
