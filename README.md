@@ -15,10 +15,10 @@
 
 ## Preview
 
-1. length
+1. Length (youtube : [https://youtu.be/8sX8Us7go1c](https://youtu.be/8sX8Us7go1c))
 ![](demo_length.png) 
 
-2. area
+1. Area (youtube : [https://youtu.be/gRd1Ag4C7lU](https://youtu.be/gRd1Ag4C7lU))
 ![](dmoe_area.png)
 
 ## Install
