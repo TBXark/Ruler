@@ -15,7 +15,7 @@
 
 ## Preview
 
-1. Length (youtube : [https://youtu.be/8sX8Us7go1c](https://youtu.be/8sX8Us7go1c))
+1. Length (youtube : [https://youtu.be/2wKLUqPizfQ](https://youtu.be/2wKLUqPizfQ))
 ![](demo_length.png) 
 
 1. Area (youtube : [https://youtu.be/gRd1Ag4C7lU](https://youtu.be/gRd1Ag4C7lU))
