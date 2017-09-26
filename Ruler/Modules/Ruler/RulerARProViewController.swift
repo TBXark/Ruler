@@ -33,6 +33,7 @@ class RulerARProViewController: UIViewController {
             static let length = #imageLiteral(resourceName: "menu_length")
             static let reset = #imageLiteral(resourceName: "menu_reset")
             static let setting = #imageLiteral(resourceName: "menu_setting")
+            static let save = #imageLiteral(resourceName: "menu_save")
         }
         struct More {
             static let close = #imageLiteral(resourceName: "more_off")
@@ -50,6 +51,9 @@ class RulerARProViewController: UIViewController {
         struct Indicator {
             static let enable = #imageLiteral(resourceName: "img_indicator_enable")
             static let disable = #imageLiteral(resourceName: "img_indicator_disable")
+        }
+        struct Result {
+            static let copy = #imageLiteral(resourceName: "result_copy")
         }
     }
     
@@ -132,11 +136,17 @@ class RulerARProViewController: UIViewController {
     
     
     
-    private lazy var menuButtonSet: PopButton = PopButton(buttons: menuButton.measurement, menuButton.reset, menuButton.setting, menuButton.more)
+    private lazy var menuButtonSet: PopButton = PopButton(buttons: menuButton.measurement,
+                                                          menuButton.save,
+                                                          menuButton.reset,
+                                                          menuButton.setting,
+                                                          menuButton.more)
+    
     private let placeButton = UIButton(size: CGSize(width: 80, height: 80), image: Image.Place.length)
     private let cancleButton = UIButton(size: CGSize(width: 60, height: 60), image: Image.Close.delete)
     private let finishButton = UIButton(size: CGSize(width: 60, height: 60), image: Image.Place.done)
     private let menuButton = (measurement: UIButton(size: CGSize(width: 50, height: 50), image: Image.Menu.area),
+                         save: UIButton(size: CGSize(width: 50, height: 50), image: Image.Menu.save),
                         reset: UIButton(size: CGSize(width: 50, height: 50), image: Image.Menu.reset),
                         setting: UIButton(size: CGSize(width: 50, height: 50), image: Image.Menu.setting),
                         more: UIButton(size: CGSize(width: 60, height: 60), image: Image.More.close))
@@ -177,21 +187,34 @@ class RulerARProViewController: UIViewController {
             sceneView.delegate = self
         }
         do {
+            
+
             let resultLabelBg = UIView()
             resultLabelBg.backgroundColor = UIColor.white.withAlphaComponent(0.8)
             resultLabelBg.layer.cornerRadius = 45
             resultLabelBg.clipsToBounds = true
             
+            let copy = UIButton(size: CGSize(width: 30, height: 30), image: Image.Result.copy)
+            copy.addTarget(self, action: #selector(RulerARProViewController.copyAction(_:)), for: .touchUpInside)
             
-            let tap = UITapGestureRecognizer.init(target: self, action: #selector(RulerARProViewController.changeMeasureUnitAction(_:)))
-            resultLabelBg.addGestureRecognizer(tap)
+            let tap = UITapGestureRecognizer(target: self, action: #selector(RulerARProViewController.changeMeasureUnitAction(_:)))
+            resultLabel.addGestureRecognizer(tap)
+            resultLabel.isUserInteractionEnabled = true
+            
+            
+            resultLabelBg.frame = CGRect(x: 30, y: 30, width: width - 60, height: 90)
+            copy.frame = CGRect(x: resultLabelBg.frame.maxX - 10 - 30,
+                                y: resultLabelBg.frame.minY + (resultLabelBg.frame.height - 30)/2,
+                                width: 30, height: 30)
+            resultLabel.frame = resultLabelBg.frame.insetBy(dx: 10, dy: 0)
+            resultLabel.attributedText = mode.toAttrStr()
             
             view.addSubview(resultLabelBg)
             view.addSubview(resultLabel)
+            view.addSubview(copy)
+
             
-            resultLabelBg.frame = CGRect(x: 64, y: 30, width: width - 128, height: 100)
-            resultLabel.frame = resultLabelBg.frame
-            resultLabel.attributedText = mode.toAttrStr()
+            
         }
         
         do {
@@ -218,6 +241,7 @@ class RulerARProViewController: UIViewController {
             menuButton.setting.addTarget(self, action: #selector(RulerARProViewController.moreAction(_:)), for: .touchUpInside)
             menuButton.reset.addTarget(self, action: #selector(RulerARProViewController.restartAction(_:)), for: .touchUpInside)
             menuButton.measurement.addTarget(self, action: #selector(RulerARProViewController.changeMeasureMode(_:)), for: .touchUpInside)
+            menuButton.save.addTarget(self, action: #selector(RulerARProViewController.saveImage(_:)), for: .touchUpInside)
             menuButtonSet.frame = CGRect(x: (width - 40 - 60), y: placeButton.frame.origin.y + 10, width: 60, height: 60)
             
 
