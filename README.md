@@ -27,7 +27,7 @@ youtube : [https://youtu.be/2wKLUqPizfQ](https://youtu.be/2wKLUqPizfQ)
 
 youtube : [https://youtu.be/gRd1Ag4C7lU](https://youtu.be/gRd1Ag4C7lU)
 
-![](dmoe_area.png)
+![](demo_area.png)
 
 
 ## Install
