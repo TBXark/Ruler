@@ -1,0 +1,10 @@
+osx_image: xcode9
+language: swift
+podfile: ./Podfile
+script:
+  - xcodebuild -workspace Ruler.xcworkspace -scheme Ruler build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
+before_install: 
+  - pod install
+cache:
+  directories:
+  - Pods
