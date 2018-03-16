@@ -34,6 +34,11 @@ class SettingViewController: UIViewController {
         ApplicationSetting.Status.displayFocus = sender.isOn
     }
     
+    @IBAction func pixoAppDidTap(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://itunes.apple.com/app/id1333531743")!,
+                                  options: [:],
+                                  completionHandler: nil)
+    }
     @IBAction func playAppDidTap(_ sender: Any) {
         UIApplication.shared.open(URL(string: "https://itunes.apple.com/app/id1071726144")!,
                                   options: [:],

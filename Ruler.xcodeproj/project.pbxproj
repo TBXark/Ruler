@@ -56,6 +56,7 @@
 		6A68615A1F6FB8B500882BCE /* LineNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineNode.swift; sourceTree = "<group>"; };
 		6A68615C1F6FBAF000882BCE /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		6A68615E1F6FBAF800882BCE /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		6A7EDABF205BC03000C72D8A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/SettingViewController.storyboard; sourceTree = "<group>"; };
 		6AA965BE1F7015AA0027ACAC /* UIAlertController+Dismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Dismiss.swift"; sourceTree = "<group>"; };
 		6AA965C91F7101F30027ACAC /* MeasurementUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementUnit.swift; sourceTree = "<group>"; };
 		6AA965E11F711B020027ACAC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		6AF69F2E1F712AF100556339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AF69F2F1F71327D00556339 /* ApplicationSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSetting.swift; sourceTree = "<group>"; };
 		6AF69F321F71378500556339 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/SettingViewController.storyboard"; sourceTree = "<group>"; };
-		6AF69F351F7144E900556339 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/SettingViewController.storyboard; sourceTree = "<group>"; };
 		6AFF56831F78B53B00AE7595 /* RulerARProViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerARProViewController.swift; sourceTree = "<group>"; };
 		6AFF56851F78BD7B00AE7595 /* PopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopButton.swift; sourceTree = "<group>"; };
 		7610879C429C51E6F2EE786A /* Pods-Ruler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ruler.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ruler/Pods-Ruler.release.xcconfig"; sourceTree = "<group>"; };
@@ -374,7 +374,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT/Ruler/Source\"";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Ruler/Source\"";
 		};
 		999369B764C5FFCCCA6E714D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -436,7 +436,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6AF69F321F71378500556339 /* zh-Hans */,
-				6AF69F351F7144E900556339 /* en */,
+				6A7EDABF205BC03000C72D8A /* en */,
 			);
 			name = SettingViewController.storyboard;
 			sourceTree = "<group>";

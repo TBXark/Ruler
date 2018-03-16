@@ -102,15 +102,15 @@ class RulerARProViewController: UIViewController {
             switch lastState {
             case .notAvailable:
                 guard HUG.isVisible else { return }
-                HUG.show(title: Localization.aRNotAvailable())
+                HUG.show(title: Localization.arNotAvailable())
             case .limited(let reason):
                 switch reason {
                 case .initializing:
-                    HUG.show(title: Localization.aRInitializing(), message: Localization.aRInitializingMessage(), inSource: self, autoDismissDuration: nil)
+                    HUG.show(title: Localization.arInitializing(), message: Localization.arInitializingMessage(), inSource: self, autoDismissDuration: nil)
                 case .insufficientFeatures:
-                    HUG.show(title: Localization.aRExcessiveMotion(), message: Localization.aRInitializingMessage(), inSource: self, autoDismissDuration: 5)
+                    HUG.show(title: Localization.arExcessiveMotion(), message: Localization.arInitializingMessage(), inSource: self, autoDismissDuration: 5)
                 case .excessiveMotion:
-                    HUG.show(title: Localization.aRExcessiveMotion(), message: Localization.aRExcessiveMotionMessage(), inSource: self, autoDismissDuration: 5)
+                    HUG.show(title: Localization.arExcessiveMotion(), message: Localization.arExcessiveMotionMessage(), inSource: self, autoDismissDuration: 5)
                 }
             case .normal:
                 HUG.dismiss()
