@@ -13,6 +13,7 @@
 		6A3365991F79551E0084BDE4 /* SceneKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3365981F79551E0084BDE4 /* SceneKit+Extension.swift */; };
 		6A33659B1F7955970084BDE4 /* CoreGraphics+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A33659A1F7955970084BDE4 /* CoreGraphics+Extension.swift */; };
 		6A52B6341F74C37600B9F78E /* CylinderLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A52B6331F74C37600B9F78E /* CylinderLine.swift */; };
+		6A62313424C1B02E00A5C846 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A62313324C1B02E00A5C846 /* Localization.swift */; };
 		6A68614B1F6FB59700882BCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A68613E1F6FAC6B00882BCE /* AppDelegate.swift */; };
 		6A68614C1F6FB59D00882BCE /* PlaneDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6A6861491F6FB3B100882BCE /* PlaneDetector.mm */; };
 		6A68614E1F6FB5A300882BCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A6861371F6FAC3100882BCE /* Assets.xcassets */; };
@@ -28,7 +29,6 @@
 		6AA965E51F711B3E0027ACAC /* RulerString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AA965E41F711B3A0027ACAC /* RulerString.strings */; };
 		6AA965E61F711B470027ACAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA965E11F711B020027ACAC /* LaunchScreen.storyboard */; };
 		6AF69F271F7126A900556339 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF69F261F7126A900556339 /* SettingViewController.swift */; };
-		6AF69F2B1F7128B200556339 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF69F2A1F7128B200556339 /* R.generated.swift */; };
 		6AF69F301F71327D00556339 /* ApplicationSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF69F2F1F71327D00556339 /* ApplicationSetting.swift */; };
 		6AF69F311F71378500556339 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF69F331F71378500556339 /* SettingViewController.storyboard */; };
 		6AFF56841F78B53B00AE7595 /* RulerARProViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF56831F78B53B00AE7595 /* RulerARProViewController.swift */; };
@@ -43,6 +43,7 @@
 		6A3365981F79551E0084BDE4 /* SceneKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneKit+Extension.swift"; sourceTree = "<group>"; };
 		6A33659A1F7955970084BDE4 /* CoreGraphics+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+Extension.swift"; sourceTree = "<group>"; };
 		6A52B6331F74C37600B9F78E /* CylinderLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CylinderLine.swift; sourceTree = "<group>"; };
+		6A62313324C1B02E00A5C846 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		6A68611B1F6F89D600882BCE /* Ruler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ruler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6861331F6F89E400882BCE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		6A6861371F6FAC3100882BCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		6AA965E71F711B4E0027ACAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/RulerString.strings; sourceTree = "<group>"; };
 		6AA965EC1F7121500027ACAC /* Ruler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ruler-Bridging-Header.h"; sourceTree = "<group>"; };
 		6AF69F261F7126A900556339 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		6AF69F2A1F7128B200556339 /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		6AF69F2E1F712AF100556339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AF69F2F1F71327D00556339 /* ApplicationSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSetting.swift; sourceTree = "<group>"; };
 		6AF69F321F71378500556339 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/SettingViewController.storyboard"; sourceTree = "<group>"; };
@@ -135,10 +135,10 @@
 			isa = PBXGroup;
 			children = (
 				6A3365961F79205E0084BDE4 /* SetPoint.wav */,
-				6AF69F2A1F7128B200556339 /* R.generated.swift */,
 				6AA965E11F711B020027ACAC /* LaunchScreen.storyboard */,
 				6AA965E41F711B3A0027ACAC /* RulerString.strings */,
 				6A6861371F6FAC3100882BCE /* Assets.xcassets */,
+				6A62313324C1B02E00A5C846 /* Localization.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -218,7 +218,6 @@
 			isa = PBXGroup;
 			children = (
 				6AA965C11F70D2E70027ACAC /* Classes */,
-				6AA965C21F70D2E70027ACAC /* Views */,
 				6AF69F261F7126A900556339 /* SettingViewController.swift */,
 				6AF69F331F71378500556339 /* SettingViewController.storyboard */,
 			);
@@ -231,13 +230,6 @@
 				6AF69F2F1F71327D00556339 /* ApplicationSetting.swift */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		6AA965C21F70D2E70027ACAC /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		A4A9E4203C67C85040658550 /* Pods */ = {
@@ -257,12 +249,10 @@
 			buildConfigurationList = 6A68612F1F6F89D600882BCE /* Build configuration list for PBXNativeTarget "Ruler" */;
 			buildPhases = (
 				261C1060BAD62498372ECD8C /* [CP] Check Pods Manifest.lock */,
-				6AA965E81F711F820027ACAC /* R.Swift */,
 				6A6861171F6F89D600882BCE /* Sources */,
 				6A6861181F6F89D600882BCE /* Frameworks */,
 				6A6861191F6F89D600882BCE /* Resources */,
 				0636F130D6798F0194D8F4A4 /* [CP] Embed Pods Frameworks */,
-				999369B764C5FFCCCA6E714D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -330,18 +320,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Ruler/Pods-Ruler-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Ruler/Pods-Ruler-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OpenCV/opencv2.framework",
-				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/opencv2.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ruler/Pods-Ruler-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ruler/Pods-Ruler-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		261C1060BAD62498372ECD8C /* [CP] Check Pods Manifest.lock */ = {
@@ -362,35 +350,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6AA965E81F711F820027ACAC /* R.Swift */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = R.Swift;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Ruler/Source\"";
-		};
-		999369B764C5FFCCCA6E714D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ruler/Pods-Ruler-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -400,7 +359,6 @@
 			files = (
 				6AFF56841F78B53B00AE7595 /* RulerARProViewController.swift in Sources */,
 				6A68615B1F6FB8B500882BCE /* LineNode.swift in Sources */,
-				6AF69F2B1F7128B200556339 /* R.generated.swift in Sources */,
 				6A33659B1F7955970084BDE4 /* CoreGraphics+Extension.swift in Sources */,
 				6A6861531F6FB68500882BCE /* ARKit+Extension.swift in Sources */,
 				6A6861591F6FB89A00882BCE /* FocusSquare.swift in Sources */,
@@ -417,6 +375,7 @@
 				6A6861551F6FB76E00882BCE /* Utilities.swift in Sources */,
 				6A68614B1F6FB59700882BCE /* AppDelegate.swift in Sources */,
 				6A3365991F79551E0084BDE4 /* SceneKit+Extension.swift in Sources */,
+				6A62313424C1B02E00A5C846 /* Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,6 @@ import AudioToolbox
 import VideoToolbox
 
 
-typealias Localization = R.string.rulerString
 
 class RulerARProViewController: UIViewController {
     
@@ -22,7 +21,7 @@ class RulerARProViewController: UIViewController {
         case length
         case area
         func toAttrStr() -> NSAttributedString {
-            let str = self == .area ? R.string.rulerString.startArea() : R.string.rulerString.startLength()
+            let str = self == .area ? Localization.startArea.toString() : Localization.startLength.toString()
             return NSAttributedString(string: str, attributes: [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 20),
                                                                  NSAttributedStringKey.foregroundColor: UIColor.black])
         }
@@ -102,17 +101,17 @@ class RulerARProViewController: UIViewController {
             switch lastState {
             case .notAvailable:
                 guard HUG.isVisible else { return }
-                HUG.show(title: Localization.arNotAvailable())
+                HUG.show(title: Localization.arNotAvailable.toString())
             case .limited(let reason):
                 switch reason {
                 case .initializing:
-                    HUG.show(title: Localization.arInitializing(), message: Localization.arInitializingMessage(), inSource: self, autoDismissDuration: nil)
+                    HUG.show(title: Localization.arInitializing.toString(), message: Localization.arInitializingMessage.toString(), inSource: self, autoDismissDuration: nil)
                 case .insufficientFeatures:
-                    HUG.show(title: Localization.arExcessiveMotion(), message: Localization.arInitializingMessage(), inSource: self, autoDismissDuration: 5)
+                    HUG.show(title: Localization.arExcessiveMotion.toString(), message: Localization.arInitializingMessage.toString(), inSource: self, autoDismissDuration: 5)
                 case .excessiveMotion:
-                    HUG.show(title: Localization.arExcessiveMotion(), message: Localization.arExcessiveMotionMessage(), inSource: self, autoDismissDuration: 5)
+                    HUG.show(title: Localization.arExcessiveMotion.toString(), message: Localization.arExcessiveMotionMessage.toString(), inSource: self, autoDismissDuration: 5)
                 case .relocalizing:
-                    HUG.show(title: Localization.arRelocalizing(), message: Localization.arRelocalizeing(), inSource: self, autoDissmissDuration: 5)
+                    HUG.show(title: Localization.arRelocalizing.toString(), message: Localization.arRelocalizing.toString(), inSource: self, autoDismissDuration: 5)
                 }
             case .normal:
                 HUG.dismiss()
@@ -282,9 +281,9 @@ class RulerARProViewController: UIViewController {
                 PHAssetChangeRequest.creationRequestForAsset(from: image)
             }) { (isSuccess: Bool, error: Error?) in
                 if let e = error {
-                    HUG.show(title: Localization.saveFail(), message: e.localizedDescription)
+                    HUG.show(title: Localization.saveFail.toString(), message: e.localizedDescription)
                 } else{
-                    HUG.show(title: Localization.saveSuccess())
+                    HUG.show(title: Localization.saveSuccess.toString())
                 }
             }
         }
@@ -299,7 +298,7 @@ class RulerARProViewController: UIViewController {
                 case .authorized:
                     saveImage(image: image)
                 default:
-                    HUG.show(title: Localization.saveFail(), message: Localization.saveNeedPermission())
+                    HUG.show(title: Localization.saveFail.toString(), message: Localization.saveNeedPermission.toString())
                 }
             }
         }
@@ -624,3 +623,6 @@ extension RulerARProViewController: ARSCNViewDelegate {
         }
     }
 }
+
+
+

@@ -14,6 +14,7 @@
 "ARInitializingMessage" = "Please shake the device to get more feature points";
 "ARInsufficientFeaturesMessage" = "The feature point is not sufficient, please sway the equipment to obtain more feature points";
 "ARExcessiveMotionMessage" = "Device moves too fast";
+"ARRelocalizing" = "AR relocalizing";
 
 
 "SaveSuccess" = "Save success";

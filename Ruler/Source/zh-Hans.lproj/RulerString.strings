@@ -14,6 +14,8 @@
 "ARInitializingMessage" = "请左右晃动设备以获取更多特征点";
 "ARInsufficientFeaturesMessage" = "特征点不足, 请左右晃动设备以获取更多特征点";
 "ARExcessiveMotionMessage" = "设备移动过快";
+"ARExcessiveMotionMessage" = "Device moves too fast";
+"ARRelocalizing" = "AR重定位中";
 
 
 "SaveSuccess" = "保存成功";
