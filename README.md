@@ -21,16 +21,14 @@
 
 1. Mesure Length 
 
-youtube : [https://youtu.be/2wKLUqPizfQ](https://youtu.be/2wKLUqPizfQ)
+https://user-images.githubusercontent.com/9513891/118448369-813e9500-b724-11eb-85de-e0cf99bbc5ad.mp4
 
-![](demo_length.png) 
 
 
 2. Mesure Area 
 
-youtube : [https://youtu.be/gRd1Ag4C7lU](https://youtu.be/gRd1Ag4C7lU)
+https://user-images.githubusercontent.com/9513891/118448402-8b609380-b724-11eb-9443-b0d763b90a9a.mp4
 
-![](demo_area.png)
 
 
 ## Install
